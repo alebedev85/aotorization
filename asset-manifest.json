@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aototrization/static/css/main.3606e2b7.css",
+    "main.js": "/aototrization/static/js/main.aefe748d.js",
+    "index.html": "/aototrization/index.html",
+    "main.3606e2b7.css.map": "/aototrization/static/css/main.3606e2b7.css.map",
+    "main.aefe748d.js.map": "/aototrization/static/js/main.aefe748d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3606e2b7.css",
+    "static/js/main.aefe748d.js"
+  ]
+}
