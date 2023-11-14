@@ -1,8 +1,8 @@
 import './LoginForm.scss'
 
-import useForm from "../hooks/useForm"
+import useForm from "../../utils/useForm"
 
-export default function Login({ onLogin, buttonText }) {
+export default function Login({ onSubmit }) {
 
   const  {form, handleChange, errors} = useForm({
     email: '',
@@ -11,7 +11,7 @@ export default function Login({ onLogin, buttonText }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onLogin(form)
+    onSubmit(form)
   }
 
   return (
@@ -48,7 +48,7 @@ export default function Login({ onLogin, buttonText }) {
                 required />
                 <span className="authentication__input-error">{errors.password}</span>
             </div>
-            <button className="authentication__submit-button" type="submit" name="authenticationSubmit">{buttonText}</button>
+            <button className="authentication__submit-button" type="submit" name="authenticationSubmit">Log In</button>
           </fieldset>
         </form>
       </div>
