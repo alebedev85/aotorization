@@ -48,7 +48,7 @@ export default function Login({ onSubmit }) {
                 required />
                 <span className="authentication__input-error">{errors.password}</span>
             </div>
-            <button className="authentication__submit-button" type="submit" name="authenticationSubmit">Log In</button>
+            <button className="authentication__submit-button" type="submit" name="authenticationSubmit">Login</button>
           </fieldset>
         </form>
       </div>

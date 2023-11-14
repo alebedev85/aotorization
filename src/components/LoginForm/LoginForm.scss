@@ -4,13 +4,16 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   &__container {
-    color: #FFFFFF;
+    color: #1a305b;
     width: 430px;
     height: 100%;
     padding: 34px 36px 37px;
     box-sizing: border-box;
+    background-color: #d6e0e9;
+    border-radius: 30px
   }
 
   &__field {
@@ -35,21 +38,21 @@
 
   &__input {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 17px;
     border: none;
     border-bottom: 2px solid #CCCCCC;
     background-color: transparent;
     color: inherit;
     outline: none;
-    padding: 0;
-    padding-bottom: 8px;
+    padding: 8px 5px;
     height: 17px;
     margin-bottom: 31px;
 
     &:focus {
-      border-bottom: 2px solid blue;
+      border: 2px solid #375ba1;
+      border-radius: 10px;
     }
   }
 
@@ -59,7 +62,7 @@
     line-height: 15px;
     color: #FF0000;
     position: absolute;
-    top: 32px;
+    top: 35px;
     left: 0;
     transition: 0.3s;
   }
@@ -83,19 +86,19 @@
   }
 
   &__submit-button {
-    margin: 186px 0 0;
+    margin: 70px 0 0;
     padding: 0;
     border: none;
     font: inherit;
     cursor: pointer;
     width: 100%;
     min-height: 50px;
-    background-color: #FFFFFF;
-    color: #000000;
-    border-radius: 2px;
+    background-color: #375ba1;
+    color: white;
+    border-radius: 36px;
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 900;
+    font-size: 24px;
     line-height: 22px;
     text-align: center;
   }
