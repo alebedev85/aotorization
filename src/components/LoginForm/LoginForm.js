@@ -15,15 +15,15 @@ export default function Login({ onSubmit }) {
   }
 
   return (
-    <div className={"authentication"}>
-      <div className="authentication__container">
-        <h2 className="authentication__title">Вход</h2>
-        <form className="authentication__form" name='Login' onSubmit={handleSubmit}>
-          <fieldset className="authentication__fieldset">
-            <div className="authentication__field">
+    <div className={"login"}>
+      <div className="login__container">
+        <h2 className="login__title">Вход</h2>
+        <form className="login__form" name='Login' onSubmit={handleSubmit} >
+          <fieldset className="login__fieldset">
+            <div className="login__field">
               <input
                 id="email-input"
-                className="authentication__input authentication__input_email"
+                className="login__input login__input_email"
                 type="email"
                 placeholder="Email"
                 name="email"
@@ -32,12 +32,12 @@ export default function Login({ onSubmit }) {
                 value={form.email}
                 onChange={handleChange}
                 required />
-                <span className="authentication__input-error">{errors.email}</span>
+                <span className="login__input-error">{errors.email}</span>
             </div>
-            <div className="authentication__field">
+            <div className="login__field">
               <input
                 id="password-input"
-                className="authentication__input authentication__input_passward"
+                className="login__input login__input_passward"
                 type="password"
                 placeholder="Пароль"
                 name="password"
@@ -46,9 +46,9 @@ export default function Login({ onSubmit }) {
                 value={form.password}
                 onChange={handleChange}
                 required />
-                <span className="authentication__input-error">{errors.password}</span>
+                <span className="login__input-error">{errors.password}</span>
             </div>
-            <button className="authentication__submit-button" type="submit" name="authenticationSubmit">Login</button>
+            <button className="login__submit-button" type="submit" name="loginSubmit">Login</button>
           </fieldset>
         </form>
       </div>

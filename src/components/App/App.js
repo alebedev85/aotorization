@@ -1,11 +1,13 @@
 import './App.scss';
 import { useState } from "react"
 import LoginForm from '../LoginForm/LoginForm'
+import ErrorMassage from '../ErrorMassage/ErrorMassage'
 import * as api from '../../utils/Api'
 
 function App() {
 
-  const [token, setToken] = useState(); //State for token
+  const [token, setToken] = useState();
+  const [isError, setIsError] = useState(false);
 
   function handlerLogIn({ email, password }) {
     api.authorize(email, password)
@@ -14,15 +16,23 @@ function App() {
         setToken(token)
       })
       .catch(err => {
-        console.log(err)
+        setIsError(true)
       })
+  }
+
+  function closeAPopup() {
+    setIsError(false);
   }
 
 
   return (
     <div className="page">
       <LoginForm
-      onSubmit={handlerLogIn}/>
+        onSubmit={handlerLogIn} />
+      <ErrorMassage
+        isOpen={isError}
+        onClose={closeAPopup}
+      />
     </div>
   );
 }
