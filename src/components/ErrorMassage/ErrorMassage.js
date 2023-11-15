@@ -25,11 +25,11 @@ export default function InfoTooltip({ name, isOpen, onClose,isSuccess }) {
 
 
   return (
-    <div className={`popup popup_type_info ${isOpen ? ('popup_opened') : ''}`} onClick={handleOverlayClose}>
+    <div className={`popup ${isOpen ? ('popup_opened') : ''}`} onClick={handleOverlayClose}>
       <div className="popup__container popup__container_type_info">
         <button className="popup__close-button" type="button" onClick={onClose} />
-        <img className="popup__info-pic"  src={fail} alt='Инфо-изображение'/>
-        <h2 className="popup__title popup__title_info">Что-то пошло не так! Попробуйте ещё раз.</h2>
+        <img className="popup__img"  src={fail} alt='Инфо-изображение'/>
+        <h2 className="popup__title ">Что-то пошло не так! Попробуйте ещё раз.</h2>
       </div>
     </div>
   )

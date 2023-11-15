@@ -17,10 +17,19 @@
     box-shadow: 10px 10px 10px #0000003c;
   }
 
-  &__field {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 27px;
+  }
+
+  &__form {
+    padding-top: 48px;
   }
 
   &__fieldset {
@@ -33,8 +42,10 @@
     margin-top: 2px;
   }
 
-  &__form {
-    padding-top: 48px;
+  &__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   &__input {
@@ -68,24 +79,6 @@
     transition: 0.3s;
   }
 
-  &__link {
-    margin: 16px 0 0;
-    padding: 0;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-
-    &:hover {
-      opacity: 0.60;
-    }
-  }
-
   &__submit-button {
     margin: 70px 0 0;
     padding: 0;
@@ -107,44 +100,16 @@
   &__submit-button:hover {
     opacity: 0.85;
   }
-
-  &__title {
-    margin: 0;
-    padding: 0;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    margin-top: 27px;
-  }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 455px) {
 
   .login {
+    width: 100%;
     &__container {
       margin-left: 19px;
       margin-right: 19px;
-      padding: 25px 22px;
       width: 100%;
-      min-height: 322px;
-    }
-
-    &__form {
-      padding-top: 75px;
-    }
-
-    &__submit-button {
-      margin-top: 15px;
-      font-size: 14px;
-      line-height: 17px;
-      min-height: 46px;
-    }
-
-    &__title {
-      font-size: 18px;
-      line-height: 22px;
     }
   }
 }
