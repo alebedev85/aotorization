@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/authentication/static/css/main.f626e7a8.css",
+    "main.css": "/authentication/static/css/main.5a54d54a.css",
     "main.js": "/authentication/static/js/main.7f5b9caf.js",
     "index.html": "/authentication/index.html",
     "static/media/fail.svg": "/authentication/static/media/fail.df8eddf661ff88f2d0efd3d570d14309.svg",
     "static/media/Close-Button.svg": "/authentication/static/media/Close-Button.f8cce9d8e61785e46719.svg",
-    "main.f626e7a8.css.map": "/authentication/static/css/main.f626e7a8.css.map",
+    "main.5a54d54a.css.map": "/authentication/static/css/main.5a54d54a.css.map",
     "main.7f5b9caf.js.map": "/authentication/static/js/main.7f5b9caf.js.map"
   },
   "entrypoints": [
-    "static/css/main.f626e7a8.css",
+    "static/css/main.5a54d54a.css",
     "static/js/main.7f5b9caf.js"
   ]
 }
