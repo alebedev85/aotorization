@@ -1,6 +1,6 @@
 import './LoginForm.scss'
 
-import useForm from "../../utils/useForm"
+import useForm from "../../myHooks/customUseForm"
 
 export default function Login({ onSubmit }) {
 

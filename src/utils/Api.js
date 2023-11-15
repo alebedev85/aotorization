@@ -1,4 +1,4 @@
-const BASE_URL = 'https://auth.nomoreparties.co';
+const BASE_URL = 'https://ylab.zenclass.ru';
 
 const makeRequest = (url, method, body) => {
   const options = {

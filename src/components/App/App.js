@@ -20,7 +20,7 @@ function App() {
       })
   }
 
-  function closeAPopup() {
+  function closePopup() {
     setIsError(false);
   }
 
@@ -31,7 +31,7 @@ function App() {
         onSubmit={handlerLogIn} />
       <ErrorMassage
         isOpen={isError}
-        onClose={closeAPopup}
+        onClose={closePopup}
       />
     </div>
   );
